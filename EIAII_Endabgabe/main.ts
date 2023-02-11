@@ -5,7 +5,7 @@ namespace CustomFirework {
     export let cc2: CanvasRenderingContext2D = <CanvasRenderingContext2D>canvas.getContext("2d");
     let background: ImageData;
 
-    export let url: string = "https://webuser.hs-furtwangen.de/~haiderna/Database/index.php";
+    export let url: string = "https://webuser.hs-furtwangen.de/~gruetzma/Database/index.php";
     export let fireworks: string = "FireworkPresets";
 
     export let serverFirework: FireworkComponents[];
