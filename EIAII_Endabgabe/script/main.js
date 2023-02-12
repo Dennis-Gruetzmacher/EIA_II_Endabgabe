@@ -1,4 +1,11 @@
 "use strict";
+/*
+Aufgabe: Endabgabe EIA II WS 22/23
+Name: Dennis Grützmacher
+Matrikel: 271246
+Datum: 12.02.2023
+Quellen: Henning Reck, Daniel Meier, Natan Haider
+*/
 var CustomFirework;
 (function (CustomFirework) {
     window.addEventListener("load", handleLoad);
@@ -74,7 +81,7 @@ var CustomFirework;
             newPresetDiv.style.backgroundColor = CustomFirework.serverFirework[index].colour.name;
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
-            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"ressources/" + String(CustomFirework.serverFirework[index].pattern) + ".png\">";
+            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"/ressources/" + String(CustomFirework.serverFirework[index].pattern) + ".png\">";
             let newSizeSpan = document.createElement("span");
             let newDurationSpan = document.createElement("span");
             newSizeSpan.classList.add("List_Size_Span");
@@ -84,7 +91,7 @@ var CustomFirework;
             newPresetDiv.append(newSizeSpan);
             newPresetDiv.append(newDurationSpan);
             let newTrashSpan = document.createElement("span");
-            newTrashSpan.innerHTML += "<img id=\"serverFireworkDelete" + index + "\" class=\"trash\" src=\"ressources/trash.png\">";
+            newTrashSpan.innerHTML += "<img id=\"serverFireworkDelete" + index + "\" class=\"trash\" src=\"/ressources/trash.png\">";
             newTrashSpan.classList.add("List_Trash");
             newInfoDiv.append(newTrashSpan);
             newLi.append(newInfoDiv);
@@ -198,7 +205,7 @@ var CustomFirework;
         let currentColor = document.querySelector("#creation_current_color");
         currentColor.style.backgroundColor = CustomFirework.currentFirework.colour.name;
         let currentPattern = document.querySelector("#creation_current_pattern");
-        currentPattern.innerHTML = "<img \" class=\"List_Pattern\" src=\"ressources/" + String(CustomFirework.currentFirework.pattern) + ".png\">";
+        currentPattern.innerHTML = "<img \" class=\"List_Pattern\" src=\"/ressources/" + String(CustomFirework.currentFirework.pattern) + ".png\">";
     }
     function drawBackground() {
         CustomFirework.cc2.beginPath();
@@ -387,7 +394,7 @@ var CustomFirework;
             newPresetDiv.style.backgroundColor = CustomFirework.localFirework[index].colour.name;
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
-            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"ressources/" + String(CustomFirework.localFirework[index].pattern) + ".png\">";
+            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"/ressources/" + String(CustomFirework.localFirework[index].pattern) + ".png\">";
             let newSizeSpan = document.createElement("span");
             let newDurationSpan = document.createElement("span");
             newSizeSpan.classList.add("List_Size_Span");
@@ -397,7 +404,7 @@ var CustomFirework;
             newPresetDiv.append(newSizeSpan);
             newPresetDiv.append(newDurationSpan);
             let newTrashSpan = document.createElement("span");
-            newTrashSpan.innerHTML += "<img id=\"localFireworkDelete" + index + "\" class=\"trash\" src=\"ressources/trash.png\">";
+            newTrashSpan.innerHTML += "<img id=\"localFireworkDelete" + index + "\" class=\"trash\" src=\"/ressources/trash.png\">";
             newTrashSpan.classList.add("List_Trash");
             newInfoDiv.append(newTrashSpan);
             newLi.append(newInfoDiv);

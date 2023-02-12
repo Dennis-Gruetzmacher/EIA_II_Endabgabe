@@ -5,7 +5,8 @@ namespace CustomFirework {
             super(_position, _colour, _size, _lifespan);
         }
 
-        draw(): void {
+        draw(): void 
+        {
             let radiusParticle: number = 1 * this.size / 10;
             let circle: number = 1;
 
@@ -16,13 +17,15 @@ namespace CustomFirework {
 
             particle.arc(0, 0, radiusParticle, 0, 2 * Math.PI);
 
-            for (let k: number = 3; k >= 0; k--) {
+            for (let k: number = 3; k >= 0; k--) 
+            {
                 cc2.save();
                 cc2.scale(1 - (k / 5), 1 - (k / 5));
                 gradient.addColorStop(0, this.colour.fColour);
                 gradient.addColorStop(1, this.colour.hColour);
                 cc2.fillStyle = gradient;
-                for (let j: number = 0; j < 18; j++) {
+                for (let j: number = 0; j < 18; j++) 
+                {
                     cc2.save();
                     cc2.rotate(j * 20 * Math.PI / 180);
                     let radius: number = circle * this.iLifetime;
