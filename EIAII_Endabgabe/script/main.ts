@@ -3,7 +3,7 @@ Aufgabe: Endabgabe EIA II WS 22/23
 Name: Dennis Grützmacher
 Matrikel: 271246
 Datum: 12.02.2023
-Quellen: Henning Reck, Daniel Meier, Natan Haider
+Quellen: Natan Haider, Henning Reck, Daniel Meier
 */
 namespace CustomFirework 
 {
