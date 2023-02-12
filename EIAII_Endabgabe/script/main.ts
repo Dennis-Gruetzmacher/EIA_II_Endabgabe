@@ -118,7 +118,7 @@ namespace CustomFirework
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
 
-            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"ressources/" + String(serverFirework[index].pattern) + ".png\">";
+            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"/ressources/" + String(serverFirework[index].pattern) + ".png\">";
 
             let newSizeSpan: HTMLSpanElement = document.createElement("span");
             let newDurationSpan: HTMLSpanElement = document.createElement("span");
@@ -130,7 +130,7 @@ namespace CustomFirework
             newPresetDiv.append(newDurationSpan);
 
             let newTrashSpan: HTMLSpanElement = document.createElement("span");
-            newTrashSpan.innerHTML += "<img id=\"serverFireworkDelete" + index + "\" class=\"trash\" src=\"ressources/trash.png\">";
+            newTrashSpan.innerHTML += "<img id=\"serverFireworkDelete" + index + "\" class=\"trash\" src=\"/ressources/trash.png\">";
             newTrashSpan.classList.add("List_Trash");
             newInfoDiv.append(newTrashSpan);
 
@@ -286,7 +286,7 @@ namespace CustomFirework
         let currentColor: HTMLSpanElement = document.querySelector("#creation_current_color");
         currentColor.style.backgroundColor = currentFirework.colour.name;
         let currentPattern: HTMLSpanElement = document.querySelector("#creation_current_pattern");
-        currentPattern.innerHTML = "<img \" class=\"List_Pattern\" src=\"ressources/" + String(currentFirework.pattern) + ".png\">";
+        currentPattern.innerHTML = "<img \" class=\"List_Pattern\" src=\"/ressources/" + String(currentFirework.pattern) + ".png\">";
     }
 
     function drawBackground(): void 
@@ -541,7 +541,7 @@ namespace CustomFirework
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
 
-            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"ressources/" + String(localFirework[index].pattern) + ".png\">";
+            newPresetDiv.innerHTML += "<img \" class=\"List_Pattern\" src=\"/ressources/" + String(localFirework[index].pattern) + ".png\">";
 
             let newSizeSpan: HTMLSpanElement = document.createElement("span");
             let newDurationSpan: HTMLSpanElement = document.createElement("span");
@@ -553,7 +553,7 @@ namespace CustomFirework
             newPresetDiv.append(newDurationSpan);
 
             let newTrashSpan: HTMLSpanElement = document.createElement("span");
-            newTrashSpan.innerHTML += "<img id=\"localFireworkDelete" + index + "\" class=\"trash\" src=\"ressources/trash.png\">";
+            newTrashSpan.innerHTML += "<img id=\"localFireworkDelete" + index + "\" class=\"trash\" src=\"/ressources/trash.png\">";
             newTrashSpan.classList.add("List_Trash");
             newInfoDiv.append(newTrashSpan);
 
